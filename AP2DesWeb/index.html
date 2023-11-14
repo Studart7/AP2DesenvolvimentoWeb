@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="escudo.png" sizes="16x16">
+  <title>Atletas Botafogo - Login</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="md5.min.js"></script>
+  <script src="autenticacao.js" defer></script>
+</head>
+<body>
+  <p>A senha é gabarito</p>
+  <form id="formularioAutenticacao">
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+    <button type="button" onclick="verificarSenha()">Login</button>
+  </form>
+  <p id="mensagemErro" style="color: red;"></p>
+</body>
+</html>
