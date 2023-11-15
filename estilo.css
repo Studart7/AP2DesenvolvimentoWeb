@@ -6,7 +6,7 @@ body {
 }
 
 #filtros {
-  margin-top: 10px;
+  margin-top: 60px;
 }
 
 p {
@@ -17,6 +17,7 @@ p {
 button {
   height: 60px;
   width: 100px;
+  margin-left: 10px;
 }
 
 article {
@@ -31,7 +32,35 @@ article img {
   max-width: 100%;
 }
 
-/* Estilos para o container de atletas */
+#top-bar {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+}
+
+#top-bar span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#logout-btn {
+  float: right;
+  margin-right: 20px;
+  background-color: lightgray;
+  color: black;
+  border: none;
+  padding: 10px;
+  height: auto;
+  cursor: pointer;
+}
+
+
 #container {
   display: grid;
   grid-template-columns: auto;
@@ -39,7 +68,9 @@ article img {
   justify-content: center;
   max-width: 1200px;
   margin: 20px auto;
+  margin-top: 50px;
 }
+
 
 /* Mídia query para duas colunas até 1024px */
 @media screen and (min-width: 768px) {
@@ -81,3 +112,4 @@ article img {
       display: none;
   }
 }
+

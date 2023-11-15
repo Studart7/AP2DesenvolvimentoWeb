@@ -10,3 +10,10 @@ function verificarSenha() {
         document.getElementById('mensagemErro').textContent = 'Senha incorreta. Tente novamente.';
     }
 }
+
+function handleKeyPress(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevent the default form submission
+        verificarSenha();
+    }
+}

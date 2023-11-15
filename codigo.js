@@ -1,10 +1,14 @@
+function logout() {
+    localStorage.removeItem('token');
+    window.location.href = 'index.html';
+}
 document.addEventListener('DOMContentLoaded', function () {
     const token = localStorage.getItem('token');
 
     if (!token) {  //Ve se o token está no local storage, se n tiver volta pro login
         window.location.href = 'index.html';
     }
-
+    
     const body = document.body;
 
     const div_filtro = document.createElement('div');
