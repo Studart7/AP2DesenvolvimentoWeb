@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         botaoVoltar.style.marginTop = '20px'; 
 
         botaoVoltar.onclick = function() { //Funçao p voltar p página de cartoes dos atletas
-          window.history.back(); 
+          window.location.href = 'principal.html';
         };
 
         detalhesAtletaDiv.appendChild(imagem);
