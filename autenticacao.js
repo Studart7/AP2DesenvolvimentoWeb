@@ -13,7 +13,7 @@ function verificarSenha() {
 
 function handleKeyPress(event) {
     if (event.key === "Enter") {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
         verificarSenha();
     }
 }

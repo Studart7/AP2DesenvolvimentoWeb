@@ -72,41 +72,36 @@ article img {
 }
 
 
-/* Mídia query para duas colunas até 1024px */
+
 @media screen and (min-width: 768px) {
   #container {
       grid-template-columns: auto auto;
   }
 }
 
-/* Mídia query para quatro colunas depois de 1024px */
 @media screen and (min-width: 1024px) {
   #container {
       grid-template-columns: auto auto auto auto;
   }
 }
 
-/* Estilos para a seleção de elenco */
 #elenco-select {
   display: block;
   margin-bottom: 20px;
 }
 
-/* Mídia query para mostrar o select em viewports maiores que 768px */
 @media screen and (min-width: 768px) {
   #elenco-select {
       display: none;
   }
 }
 
-/* Estilos para os botões de elenco */
 .btn-group {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-/* Mídia query para mostrar botões em viewports maiores que 768px */
 @media screen and (min-width: 768px) {
   .btn-group {
       display: none;
