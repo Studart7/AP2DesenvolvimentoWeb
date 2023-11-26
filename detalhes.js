@@ -20,8 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.body.removeChild(mensagemCarregando);
   };
-
+  
   if (atletaId) {
+    if (atletaId > 60){
+      console.error('ID do atleta ta errado.');
+      const mensagemErroI = document.createElement('p');
+      mensagemErroI.textContent = 'ID do atleta não existe.';
+  
+      document.body.appendChild(mensagemErroI);
+    }
+    else{
     const endpointUrl = `https://botafogo-atletas.mange.li/${atletaId}`;
 
     const mensagemCarregando = exibirMensagemCarregando(); // Mostra carregando antes de receber as info
@@ -91,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.body.appendChild(mensagemErro);
       });
-
+    }
   } else {  //Se o ID do atleta não tiver no endpoint da uma msg de erro
     console.error('ID do atleta não fornecido na URL.');
     const mensagemErro = document.createElement('p');
@@ -99,5 +107,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.body.appendChild(mensagemErro);
   }
-
+  
 });
