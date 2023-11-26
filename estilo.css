@@ -71,8 +71,6 @@ article img {
   margin-top: 50px;
 }
 
-
-
 @media screen and (min-width: 768px) {
   #container {
       grid-template-columns: auto auto;
@@ -85,16 +83,6 @@ article img {
   }
 }
 
-#elenco-select {
-  display: block;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  #elenco-select {
-      display: none;
-  }
-}
 
 .btn-group {
   display: flex;
@@ -102,9 +90,4 @@ article img {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .btn-group {
-      display: none;
-  }
-}
 
